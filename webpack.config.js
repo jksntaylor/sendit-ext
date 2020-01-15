@@ -73,6 +73,7 @@ const config = {
     }),
     new CopyPlugin([
       { from: 'icons', to: 'icons', ignore: ['icon.xcf'] },
+      { from: 'assets', to: 'images'},
       { from: 'index.html', to: 'index.html', transform: transformHtml },
       {
         from: 'manifest.json',

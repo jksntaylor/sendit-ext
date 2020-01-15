@@ -12,6 +12,7 @@
 </template>
 
 <script>
+import { VSelect, VIcon } from 'vuetify/lib'
 export default {
     name: 'Location',
     data() {
@@ -33,6 +34,10 @@ export default {
             this.$data.edit = false;
             this.$emit('update');
         }
+    },
+    components: {
+        VSelect,
+        VIcon
     }
 }
 </script>

@@ -14,8 +14,13 @@
 </template>
 
 <script>
+import { VProgressLinear, VIcon } from 'vuetify/lib'
 export default {
-    name: 'Lifts'
+    name: 'Lifts',
+    components: {
+        VProgressLinear,
+        VIcon
+    }
 }
 </script>
 

@@ -48,7 +48,7 @@ export default {
             font-weight: 300;
             text-align: left;
             margin: 0;
-            overflow-y: scroll;
+            overflow: visible;
             height: calc(100% - 72px);
         }
     }

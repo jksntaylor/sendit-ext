@@ -100,9 +100,7 @@ export default {
             }
         },
         getInfo() {
-            console.log('in get info');
             axios.get(`https://cors-anywhere.herokuapp.com/https://liftie.info/api/resort/${this.$data.resort}`).then(res => {
-                console.log('got resort info')
                 this.$store.commit('resortInfo', res.data);
                 this.$data.api = true;
             })
@@ -202,7 +200,6 @@ export default {
         height: calc(100% - 156px);
         justify-content: space-between;
         color: white;
-        padding-top: 30px;
 
         .col {
             height: 100%;

@@ -15,6 +15,7 @@
 </template>
 
 <script>
+import { VCarousel, VCarouselItem } from 'vuetify/lib'
 export default {
     name: 'Webcams',
     data() {
@@ -22,8 +23,9 @@ export default {
             
         }
     },
-    methods: {
-       
+    components: {
+        VCarousel,
+        VCarouselItem
     }
 }
 </script>
