@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueCookie from 'vue-cookie';
 import App from './App.vue'
-import store from '../store'
-import vuetify from 'vuetify';
+import store from './store'
+import vuetify from './plugins/vuetify';
 import 'vuetify/dist/vuetify.min.css';
 
 Vue.config.productionTip = false

@@ -11,7 +11,7 @@ const config = {
   context: __dirname + '/src',
   entry: {
     'background': './background.js',
-    'components/main': './components/main.js'
+    'main': './main.js'
   },
   output: {
     path: __dirname + '/dist',
@@ -41,7 +41,7 @@ const config = {
       },
       {
         test: /\.sass$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader?indentedSyntax'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg|ico)$/,
@@ -73,7 +73,7 @@ const config = {
     }),
     new CopyPlugin([
       { from: 'icons', to: 'icons', ignore: ['icon.xcf'] },
-      { from: 'components/index.html', to: 'components/index.html', transform: transformHtml },
+      { from: 'index.html', to: 'index.html', transform: transformHtml },
       {
         from: 'manifest.json',
         to: 'manifest.json',

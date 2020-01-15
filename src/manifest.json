@@ -13,6 +13,6 @@
     ]
   },
   "chrome_url_overrides": {
-    "newtab": "components/index.html"
+    "newtab": "index.html"
   }
 }
