@@ -1,0 +1,52 @@
+{
+  "name": "sendit-ext",
+  "version": "1.0.0",
+  "description": "An extension displaying Ski Resort Information",
+  "author": "Jackson Taylor <jackson@jksntaylor.com>",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --hide-modules",
+    "build-zip": "node scripts/build-zip.js",
+    "build:dev": "cross-env NODE_ENV=development webpack --hide-modules",
+    "prettier": "prettier \"src/**/*.{js,vue}\"",
+    "prettier:write": "npm run prettier -- --write",
+    "watch": "npm run build -- --watch",
+    "watch:dev": "cross-env HMR=true npm run build:dev -- --watch"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "vue": "^2.6.10",
+    "vue-cookie": "^1.1.4",
+    "vuetify": "^2.1.0",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/runtime-corejs3": "^7.4.0",
+    "@types/chrome": "^0.0.74",
+    "archiver": "^3.0.0",
+    "babel-loader": "^8.0.2",
+    "copy-webpack-plugin": "^5.1.1",
+    "core-js": "^3.0.1",
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.4.0",
+    "ejs": "^2.6.1",
+    "file-loader": "^5.0.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.9.3",
+    "sass": "^1.19.0",
+    "sass-loader": "^8.0.0",
+    "vue-cli-plugin-vuetify": "^2.0.3",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.6.10",
+    "vuetify-loader": "^1.3.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-extension-reloader": "^1.1.0"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "license": "MIT"
+}
