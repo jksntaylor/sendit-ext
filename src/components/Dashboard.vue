@@ -18,6 +18,7 @@
                 <v-col cols="7" class="header-left">
                     <h1 class="greeting">Hello, {{name}}</h1>
                     <h2 class="time">It is {{time}} on {{date}}</h2>
+                    <button @click="clearCookie" class="clearCookie">clear</button>
                 </v-col>
                 <v-col cols="5">
                     <Location @update="changeResort"/>
@@ -108,6 +109,10 @@ export default {
         changeResort() {
             this.$data.resort = this.$cookie.get('resort');
             this.getInfo();
+        },
+        clearCookie() {
+            this.$cookie.delete('name');
+            this.$cookie.delete('resort');
         }
     }
 }
@@ -209,5 +214,8 @@ export default {
             display: flex;
             flex-direction: column;
         }
+    }
+    .clearCookie {
+        display: none;
     }
 </style>

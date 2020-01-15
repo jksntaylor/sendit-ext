@@ -1,7 +1,7 @@
 {
-  "name": "sendit-ext",
-  "description": "An extension displaying Ski Resort Information",
-  "version": null,
+  "name": "SendIT",
+  "description": "Check on your favorite resort every time you open a new tab. See weather conditions, lift statuses, recent tweets, and live webcams",
+  "version": "1.0.0",
   "manifest_version": 2,
   "icons": {
     "48": "icons/icon_48.png",

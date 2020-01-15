@@ -1,6 +1,8 @@
 <template>
     <div class="cams">
-        <v-carousel 
+        <v-carousel
+            cycle
+            interval="5000" 
             height="100%"
             :show-arrows="false"
             :hide-delimiter-background="true">
