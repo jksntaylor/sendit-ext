@@ -44,7 +44,7 @@ export default {
             justify-content: space-between;
             .cam-title {
                 font-weight: 900;
-                font-size: 20px;
+                font-size: 16px;
                 text-align: left;
                 padding-bottom: 10px;
                 border-bottom: 2px solid white;

@@ -33,11 +33,13 @@ export default {
             line-height: 30px;
             padding-bottom: 10px;
 
-            .conditions, .temperature {
+            .temperature {
                 font-size: 24px;
                 font-weight: 900;
             }
             .conditions {
+                font-size: 18px;
+                font-weight: 900;
                 margin-left: 20px;
                 text-align: right;
             }
